@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         if(aCode != null && aPass != null){
             Intent intent = new Intent(MainActivity.this, SecondActivity.class);
             startActivity(intent);
+            finish();
         }
 
         v_btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -75,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                 startActivity(intent);
+                finish();
             } else {
                  v_Error.setVisibility(View.VISIBLE);
                  v_Error.setText("Usuario y/o Contrasena invalido");

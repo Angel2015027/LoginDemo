@@ -34,11 +34,12 @@ public class SecondActivity extends AppCompatActivity {
                 ed.putString("AgentPwd", null);
                 ed.apply();
 
-                /*Intent intent = new Intent(SecondActivity.this, MainActivity.class);
+                Intent intent = new Intent(SecondActivity.this, MainActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intent);*/
+                startActivity(intent);
+                finish();
 
-                Toast.makeText(SecondActivity.this, "Soon...", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(SecondActivity.this, "Soon...", Toast.LENGTH_SHORT).show();
             }
         });
 
